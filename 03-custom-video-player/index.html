@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Custom Video Player</title>
+</head>
+<body>
+    
+    <div class="player">
+        <video src="./assets/gone.mp4" id="video" class="video"></video>
+
+        <div class="player__controls">
+
+            <div class="progress">
+                <div class="progress__filled"></div>
+            </div>
+           
+            <div class="left__controls">
+                <button id="play" class="player__button" aria-label="재생" lang="ko">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="stop" class="player__button" aria-label="멈춤" lang="ko">
+                    <i class="fas fa-stop"></i>
+                </button>
+                <button class="player__button" data-skip="-5" aria-label="5초 뒤로" lang="ko">
+                    <i class="fas fa-undo"></i>
+                </button>
+                <button class="player__button" data-skip="5" aria-label="5초 앞으로" lang="ko">
+                    <i class="fas fa-redo"></i>
+                </button>
+
+                <span id="time-elapsed" class="timestamp">00:00</span>
+                <span id="duration" class="timestamp">00:00</span>
+            </div>
+
+            <div class="right__controls">
+                <button id="volumeBtn" class="player__button">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <input type="range" name="volume" class="volume" min="0" max="1" step="0.05" value="0.5">
+
+                <button id="fullscreen" class="player__button" aria-label="전체 화면" lang="ko">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
