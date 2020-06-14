@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #2f3545;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body::after {
+    content: "@bhy304";
+    display: block;
+    color: #2f3545;
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+
+aside {
+    padding: 10px 20px;
+    width: 260px; /* 250px */
+    border-right: 1px solid #2f3545;
+}
+
+button {
+    cursor: pointer;
+    background-color: #275ffe;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 8px 10px 8px -1px rgba(39, 94, 254, 0.32);
+}
+
+button:active, button:focus {
+    outline: none;
+    border: none;
+}
+
+main {
+    flex: 1;
+    padding: 0 20px; /* 10px 20px */
+}
+
+h2 {
+    border-bottom: 1px solid #2f3545;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+h3 {
+    border-top: 1px solid #2f3545;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 20px 0 0;
+}
+
+h3 .wealth {
+    color: #ff4949;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
